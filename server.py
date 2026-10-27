@@ -24,10 +24,12 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-# Sursa textului, in ordine: --data, variabila BIBLE_DATA, apoi data/books.
-# data/books       = dataset GitHub, ortografie modernizata
-# data-bibliaortodoxa/books = textul de pe bibliaortodoxa.ro, aproape de tipar
-_DEFAULT = Path(__file__).parent / "data" / "books"
+# Sursa textului, in ordine: --data, variabila BIBLE_DATA, apoi implicit.
+# data-bibliaortodoxa/books = textul din repo (ortografia tiparului)
+# data/books                = datasetul GitHub, ortografie modernizata
+_DEFAULT = Path(__file__).parent / "data-bibliaortodoxa" / "books"
+if not (_DEFAULT / "cuprins.json").exists():
+    _DEFAULT = Path(__file__).parent / "data" / "books"
 if "--data" in sys.argv:
     DATA = Path(sys.argv[sys.argv.index("--data") + 1])
 elif os.environ.get("BIBLE_DATA"):

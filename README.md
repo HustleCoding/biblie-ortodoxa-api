@@ -3,23 +3,30 @@
 API minimal peste textul Bibliei ortodoxe (ediția sinodală), ca să poți construi
 o aplicație fără să scrapezi un site la fiecare cerere.
 
-**Conținut:** 80 de cărți, 1.347 de capitole, 36.311 versete — canonul ortodox
+**Conținut:** 80 de cărți, 1.347 de capitole, 36.310 versete — canonul ortodox
 complet, inclusiv Tobit, Iudita, Baruh, Ecclesiasticul, Macabeii, III Ezdra,
 Rugăciunea regelui Manase și Psalmul 151.
 
+Textul e în repo, în `data-bibliaortodoxa/books/`, și e sursa implicită a
+serverului. Ortografia e cea din tipar (`prooroc`, `mîna`, `cît`), nu cea
+modernizată.
+
 ## Două surse de text
 
-| Folder | Ce e | Ortografie | Stare |
+| Folder | Ce e | Ortografie | În repo |
 |---|---|---|---|
-| `data/books` | dataset GitHub (AndreiGam) | modernizată (`proroc`, `mâna`) | curat, fără OCR |
-| `data-bibliaortodoxa/books` | extras de pe bibliaortodoxa.ro | veche (`prooroc`, `mîna`) | aproape de tipar, dar cu typo-uri OCR |
+| `data-bibliaortodoxa/books` | extras de pe bibliaortodoxa.ro | veche (`prooroc`, `mîna`) | **da** — sursa implicită |
+| `data/books` | dataset GitHub (AndreiGam) | modernizată (`proroc`, `mâna`) | nu, se aduce local |
+
+Datasetul GitHub are 36.311 versete față de 36.310 aici. Diferența e
+documentată în [PROVENIENTA.md](data-bibliaortodoxa/PROVENIENTA.md).
 
 Serverul alege sursa așa:
 
 ```bash
-python3 server.py                                   # data/books
-python3 server.py --data data-bibliaortodoxa/books  # textul de pe site
-BIBLE_DATA=data-bibliaortodoxa/books python3 server.py 9000
+python3 server.py                                   # data-bibliaortodoxa/books
+python3 server.py --data data/books                 # datasetul modernizat
+BIBLE_DATA=data/books python3 server.py 9000
 ```
 
 ## Cum se extrage textul de pe site
@@ -82,8 +89,8 @@ browser. Serverul ține totul în memorie și răspunde în ~2–5 ms.
 
 ## Date
 
-`data/books/*.json`, câte un fișier pe carte, plus `cuprins.json` cu ordinea
-canonică. Structura unui fișier:
+`data-bibliaortodoxa/books/*.json`, câte un fișier pe carte, plus
+`cuprins.json` cu ordinea canonică. Structura unui fișier:
 
 ```json
 {
@@ -96,8 +103,9 @@ canonică. Structura unui fișier:
 }
 ```
 
-Sursa datasetului: [AndreiGam/bibliaortodoxa](https://github.com/AndreiGam/bibliaortodoxa)
-(licență Unlicense), derivat din textul ediției sinodale.
+Sursa textului din repo: [bibliaortodoxa.ro](https://bibliaortodoxa.ro/),
+prin `scrape_bibliaortodoxa.py`. Detalii în
+[PROVENIENTA.md](data-bibliaortodoxa/PROVENIENTA.md).
 
 ## De știut înainte de producție
 
