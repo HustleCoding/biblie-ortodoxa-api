@@ -1,0 +1,12 @@
+# datele din data/ (datasetul GitHub) nu se urca — textul din data-bibliaortodoxa/ da
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# diverse
+.DS_Store
+*.log
