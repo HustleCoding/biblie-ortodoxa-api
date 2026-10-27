@@ -53,11 +53,49 @@ raportate, nu considerate erori.
 ## Pornire
 
 ```bash
-python3 server.py          # http://127.0.0.1:8787
-python3 server.py 9000     # alt port
+python3 server.py                     # http://127.0.0.1:8787
+python3 server.py 9000                # alt port
+python3 server.py --host 0.0.0.0      # vizibil în rețeaua locală (telefon, tabletă)
 ```
 
 Fără dependențe — doar biblioteca standard Python 3.9+.
+
+## Cum îl folosești din altă aplicație
+
+Trei feluri, de la cel mai simplu la cel mai „de producție".
+
+**1. Server local + HTTP.** Pornești `server.py` și chemi rutele din orice
+proces de pe calculator. CORS e deschis, deci merge și din browser.
+
+```js
+// JavaScript, în browser sau Node 18+
+const r = await fetch("http://127.0.0.1:8787/api/verse/in/3/16");
+const { text } = await r.json();
+```
+
+```python
+# Python
+import json, urllib.request
+with urllib.request.urlopen("http://127.0.0.1:8787/api/books/mt/5") as r:
+    capitol = json.load(r)
+```
+
+Pentru telefon în aceeași rețea: `python3 server.py --host 0.0.0.0`, apoi
+folosești IP-ul afișat, de exemplu `http://192.168.50.185:8787`.
+
+Exemple complete în [`examples/`](examples/): `web.html` (pagină de test,
+o deschizi direct în browser) și `python_client.py`.
+
+**2. Fără server — iei JSON-ul direct.** Dacă aplicația ta e offline sau
+vrei zero latență, copiază `data-bibliaortodoxa/books/*.json` în proiect și
+citește-le ca fișiere. Structura e simplă: un fișier pe carte, capitole,
+versete cu cheie numerică.
+
+**3. Găzduit public.** Dacă vrei un URL stabil pentru o aplicație mobilă sau
+un site, mută `server.py` pe un VPS mic (systemd + Caddy) sau rescrie cele
+șapte rute ca Cloudflare Worker, cu JSON-urile în R2. Pentru 36.310 versete
+nu ai nevoie de bază de date.
+
 
 ## Rute
 

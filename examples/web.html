@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<title>Test API — Biblia ortodoxă</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 680px; margin: 40px auto; padding: 0 16px; line-height: 1.5; }
+  input, button { font-size: 16px; padding: 8px 10px; }
+  input { width: 70%; }
+  li { margin: 12px 0; }
+  .ref { color: #666; font-size: 13px; }
+  .err { color: #b00; }
+</style>
+</head>
+<body>
+<h1>Biblia ortodoxă — test API</h1>
+<p>Pornește serverul întâi: <code>python3 server.py</code>. Dacă îl accesezi de pe telefon,
+schimbă <code>BASE</code> cu IP-ul calculatorului.</p>
+
+<form id="f">
+  <input id="q" placeholder="caută, ex. „fericiti” sau „inima curata”" value="fericiti">
+  <button>caută</button>
+</form>
+<ul id="out"></ul>
+
+<script>
+const BASE = "http://127.0.0.1:8787";
+
+document.getElementById("f").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const out = document.getElementById("out");
+  const q = document.getElementById("q").value.trim();
+  out.innerHTML = "<li>caut…</li>";
+  try {
+    const r = await fetch(`${BASE}/api/search?q=${encodeURIComponent(q)}&limit=10`);
+    const data = await r.json();
+    out.innerHTML = "";
+    if (!data.versete || !data.versete.length) {
+      out.innerHTML = '<li>Niciun rezultat.</li>';
+      return;
+    }
+    for (const v of data.versete) {
+      const li = document.createElement("li");
+      li.innerHTML = `${v.text} <span class="ref">— ${v.carte} ${v.capitol}, ${v.verset}</span>`;
+      out.appendChild(li);
+    }
+  } catch (err) {
+    out.innerHTML = `<li class="err">Nu am putut contacta API-ul: ${err.message}</li>`;
+  }
+});
+</script>
+</body>
+</html>

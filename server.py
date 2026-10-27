@@ -204,20 +204,41 @@ class Handler(BaseHTTPRequestHandler):
             return self.send_json({"error": "cerere invalida"}, 400)
 
 
+def lan_ip() -> str | None:
+    """IP-ul din reteaua locala, ca sa-l poti deschide de pe telefon."""
+    import socket
+
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        ip = s.getsockname()[0]
+        s.close()
+        return ip
+    except OSError:
+        return None
+
+
 def main():
     # portul e orice argument numeric ramas dupa ce scoatem "--data <cale>"
-    port, skip_next = 8787, False
-    for arg in sys.argv[1:]:
+    # --host 0.0.0.0 expune serverul in reteaua locala (implicit doar localhost)
+    port, host, skip_next = 8787, "127.0.0.1", False
+    for i, arg in enumerate(sys.argv[1:]):
         if skip_next:
             skip_next = False
-        elif arg == "--data":
+        elif arg in ("--data", "--host"):
             skip_next = True
         elif arg.isdigit():
             port = int(arg)
-    print(f"{len(ORDER)} carti, {len(INDEX)} versete")
-    print(f"sursa: {DATA}")
-    print(f"API pornit: http://127.0.0.1:{port}")
-    ThreadingHTTPServer(("127.0.0.1", port), Handler).serve_forever()
+    if "--host" in sys.argv:
+        host = sys.argv[sys.argv.index("--host") + 1]
+
+    print(f"{len(ORDER)} carti, {len(INDEX)} versete", flush=True)
+    print(f"sursa: {DATA}", flush=True)
+    print(f"API pornit: http://{host if host != '0.0.0.0' else '127.0.0.1'}:{port}", flush=True)
+    if host == "0.0.0.0":
+        ip = lan_ip()
+        print(f"din retea:  http://{ip}:{port}" if ip else "din retea:  (nu am gasit IP-ul)", flush=True)
+    ThreadingHTTPServer((host, port), Handler).serve_forever()
 
 
 if __name__ == "__main__":
