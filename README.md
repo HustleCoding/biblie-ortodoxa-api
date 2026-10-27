@@ -35,11 +35,20 @@ BIBLE_DATA=data/books python3 server.py 9000
 cereri și reîncercări. Merge lent, intenționat — site-ul e mic și nu are API.
 
 ```bash
-python3 scrape_bibliaortodoxa.py            # ~25 min, scrie în data-bibliaortodoxa/
-python3 compare_sources.py                  # diferențe între cele două surse
+python3 scrape_bibliaortodoxa.py                    # tot canonul, ~15 min
+python3 scrape_bibliaortodoxa.py --only Rut         # o singură carte
+python3 validate.py                                 # verifică integritatea
+python3 compare_sources.py                          # diferențe față de datasetul GitHub
 ```
 
-Se poate relua oricând: sări peste cărțile deja descărcate.
+Lista cărților, numărul de capitole și id-urile din `carte.php` stau în
+[`canon.json`](canon.json), deci scraperul merge pe un clone curat, fără
+folderul `data/`. Se poate relua oricând: sare peste cărțile deja descărcate.
+
+`validate.py` întoarce cod 1 dacă lipsește o carte, un capitol sau un verset
+fără explicație în `nota`. Golurile asumate (Deuteronom 2, Iosua 22) sunt
+raportate, nu considerate erori.
+
 
 ## Pornire
 

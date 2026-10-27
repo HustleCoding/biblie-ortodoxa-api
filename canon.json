@@ -1,0 +1,724 @@
+{
+ "carti": [
+  {
+   "n": 1,
+   "abr": "Fc",
+   "titlu": "Facerea",
+   "nume": "Întâia Carte a lui Moise",
+   "testament": "Vechiul Testament",
+   "capitole": 50,
+   "id_site": 25
+  },
+  {
+   "n": 2,
+   "abr": "Ies",
+   "titlu": "Ieşirea",
+   "nume": "A doua Carte a lui Moise",
+   "testament": "Vechiul Testament",
+   "capitole": 40,
+   "id_site": 32
+  },
+  {
+   "n": 3,
+   "abr": "Lv",
+   "titlu": "Leviticul",
+   "nume": "A treia Carte a lui Moise",
+   "testament": "Vechiul Testament",
+   "capitole": 27,
+   "id_site": 47
+  },
+  {
+   "n": 4,
+   "abr": "Num",
+   "titlu": "Numerii",
+   "nume": "A patra Carte a lui Moise",
+   "testament": "Vechiul Testament",
+   "capitole": 36,
+   "id_site": 59
+  },
+  {
+   "n": 5,
+   "abr": "Dt",
+   "titlu": "Deuteronomul",
+   "nume": "A cincea Carte a lui Moise",
+   "testament": "Vechiul Testament",
+   "capitole": 34,
+   "id_site": 17
+  },
+  {
+   "n": 6,
+   "abr": "Ios",
+   "titlu": "Iosua Navi",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 24,
+   "id_site": 41
+  },
+  {
+   "n": 7,
+   "abr": "Jd",
+   "titlu": "Cartea Judecătorilor",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 21,
+   "id_site": 46
+  },
+  {
+   "n": 8,
+   "abr": "Rut",
+   "titlu": "Rut",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 4,
+   "id_site": 71
+  },
+  {
+   "n": 9,
+   "abr": "1Rg",
+   "titlu": "I Regi",
+   "nume": "Cartea întâi a Regilor",
+   "testament": "Vechiul Testament",
+   "capitole": 31,
+   "id_site": 66
+  },
+  {
+   "n": 10,
+   "abr": "2Rg",
+   "titlu": "II Regi",
+   "nume": "Cartea a doua a Regilor",
+   "testament": "Vechiul Testament",
+   "capitole": 24,
+   "id_site": 67
+  },
+  {
+   "n": 11,
+   "abr": "3Rg",
+   "titlu": "III Regi",
+   "nume": "Cartea a treia a Regilor",
+   "testament": "Vechiul Testament",
+   "capitole": 22,
+   "id_site": 68
+  },
+  {
+   "n": 12,
+   "abr": "4Rg",
+   "titlu": "IV Regi",
+   "nume": "Cartea a patra a Regilor",
+   "testament": "Vechiul Testament",
+   "capitole": 25,
+   "id_site": 69
+  },
+  {
+   "n": 13,
+   "abr": "1Par",
+   "titlu": "I Paralipomena",
+   "nume": "Cartea întâi a Cronicilor",
+   "testament": "Vechiul Testament",
+   "capitole": 29,
+   "id_site": 14
+  },
+  {
+   "n": 14,
+   "abr": "2Par",
+   "titlu": "II Paralipomena",
+   "nume": "Cartea a doua a Cronicilor",
+   "testament": "Vechiul Testament",
+   "capitole": 36,
+   "id_site": 15
+  },
+  {
+   "n": 15,
+   "abr": "1Ezr",
+   "titlu": "I Ezdra",
+   "nume": "Cartea întâi a lui Ezdra",
+   "testament": "Vechiul Testament",
+   "capitole": 10,
+   "id_site": 23
+  },
+  {
+   "n": 16,
+   "abr": "Ne",
+   "titlu": "Neemia",
+   "nume": "Cartea a doua a lui Ezdra",
+   "testament": "Vechiul Testament",
+   "capitole": 13,
+   "id_site": 58
+  },
+  {
+   "n": 17,
+   "abr": "Est",
+   "titlu": "Estera",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 10,
+   "id_site": 21
+  },
+  {
+   "n": 18,
+   "abr": "Iov",
+   "titlu": "Iov",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 42,
+   "id_site": 42
+  },
+  {
+   "n": 19,
+   "abr": "Ps",
+   "titlu": "Psalmii",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 151,
+   "id_site": 65
+  },
+  {
+   "n": 20,
+   "abr": "Pr",
+   "titlu": "Proberbe",
+   "nume": "Pildele lui Solomon",
+   "testament": "Vechiul Testament",
+   "capitole": 31,
+   "id_site": 63
+  },
+  {
+   "n": 21,
+   "abr": "Ecc",
+   "titlu": "Ecclesiastul",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 12,
+   "id_site": 18
+  },
+  {
+   "n": 22,
+   "abr": "Cant",
+   "titlu": "Cântări",
+   "nume": "Cântarea Cântărilor",
+   "testament": "Vechiul Testament",
+   "capitole": 8,
+   "id_site": 9
+  },
+  {
+   "n": 23,
+   "abr": "Is",
+   "titlu": "Isaia",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 66,
+   "id_site": 43
+  },
+  {
+   "n": 24,
+   "abr": "Ir",
+   "titlu": "Ieremia",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 52,
+   "id_site": 31
+  },
+  {
+   "n": 25,
+   "abr": "Plg",
+   "titlu": "Plangeri",
+   "nume": "Plângerile lui Ieremia",
+   "testament": "Vechiul Testament",
+   "capitole": 5,
+   "id_site": 64
+  },
+  {
+   "n": 26,
+   "abr": "Iz",
+   "titlu": "Iezechiel",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 48,
+   "id_site": 33
+  },
+  {
+   "n": 27,
+   "abr": "Dn",
+   "titlu": "Daniel",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 12,
+   "id_site": 16
+  },
+  {
+   "n": 28,
+   "abr": "Os",
+   "titlu": "Osea",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 14,
+   "id_site": 60
+  },
+  {
+   "n": 29,
+   "abr": "Am",
+   "titlu": "Amos",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 9,
+   "id_site": 3
+  },
+  {
+   "n": 30,
+   "abr": "Mi",
+   "titlu": "Miheia",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 7,
+   "id_site": 56
+  },
+  {
+   "n": 31,
+   "abr": "Ioil",
+   "titlu": "Ioil",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 4,
+   "id_site": 39
+  },
+  {
+   "n": 32,
+   "abr": "Avd",
+   "titlu": "Avdie",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 1,
+   "id_site": 6
+  },
+  {
+   "n": 33,
+   "abr": "Ion",
+   "titlu": "Iona",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 4,
+   "id_site": 40
+  },
+  {
+   "n": 34,
+   "abr": "Naum",
+   "titlu": "Naum",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 3,
+   "id_site": 57
+  },
+  {
+   "n": 35,
+   "abr": "Avc",
+   "titlu": "Avacum",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 3,
+   "id_site": 5
+  },
+  {
+   "n": 36,
+   "abr": "Sof",
+   "titlu": "Sofonie",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 3,
+   "id_site": 73
+  },
+  {
+   "n": 37,
+   "abr": "Ag",
+   "titlu": "Agheu",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 2,
+   "id_site": 2
+  },
+  {
+   "n": 38,
+   "abr": "Za",
+   "titlu": "Zaharia",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 14,
+   "id_site": 82
+  },
+  {
+   "n": 39,
+   "abr": "Mal",
+   "titlu": "Maleahi",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 3,
+   "id_site": 52
+  },
+  {
+   "n": 40,
+   "abr": "Tob",
+   "titlu": "Tobit",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 14,
+   "id_site": 81
+  },
+  {
+   "n": 41,
+   "abr": "Idt",
+   "titlu": "Iudita",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 16,
+   "id_site": 45
+  },
+  {
+   "n": 42,
+   "abr": "Bar",
+   "titlu": "Baruh",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 5,
+   "id_site": 8
+  },
+  {
+   "n": 43,
+   "abr": "Epist",
+   "titlu": "Epistola lui Ieremia",
+   "nume": "",
+   "testament": "Vechiul Testament",
+   "capitole": 1,
+   "id_site": 20
+  },
+  {
+   "n": 44,
+   "abr": "Tin",
+   "titlu": "3 tineri",
+   "nume": "Cântarea celor trei tineri",
+   "testament": "Vechiul Testament",
+   "capitole": 1,
+   "id_site": 1
+  },
+  {
+   "n": 45,
+   "abr": "3Ezr",
+   "titlu": "III Ezdra",
+   "nume": "Cartea a treia a lui Ezdra",
+   "testament": "Vechiul Testament",
+   "capitole": 9,
+   "id_site": 24
+  },
+  {
+   "n": 46,
+   "abr": "Sol",
+   "titlu": "Solomon",
+   "nume": "Cartea înțelepciunii lui Solomon",
+   "testament": "Vechiul Testament",
+   "capitole": 19,
+   "id_site": 74
+  },
+  {
+   "n": 47,
+   "abr": "Sir",
+   "titlu": "Sirah (Ecclesiasticul)",
+   "nume": "Cartea înțelepciunii lui Isus, fiul lui Sirah",
+   "testament": "Vechiul Testament",
+   "capitole": 51,
+   "id_site": 72
+  },
+  {
+   "n": 48,
+   "abr": "Sus",
+   "titlu": "Susanei",
+   "nume": "Istoria Susanei",
+   "testament": "Vechiul Testament",
+   "capitole": 1,
+   "id_site": 75
+  },
+  {
+   "n": 49,
+   "abr": "Bel",
+   "titlu": "Bel şi Balaurul",
+   "nume": "Istoria omorârii balaurului și a sfărâmării lui Bel",
+   "testament": "Vechiul Testament",
+   "capitole": 1,
+   "id_site": 7
+  },
+  {
+   "n": 50,
+   "abr": "1Mac",
+   "titlu": "I Macabei",
+   "nume": "Cartea întâi a Macabeilor",
+   "testament": "Vechiul Testament",
+   "capitole": 16,
+   "id_site": 49
+  },
+  {
+   "n": 51,
+   "abr": "2Mac",
+   "titlu": "II Macabei",
+   "nume": "Cartea a doua a Macabeilor",
+   "testament": "Vechiul Testament",
+   "capitole": 15,
+   "id_site": 50
+  },
+  {
+   "n": 52,
+   "abr": "3Mac",
+   "titlu": "III Macabei",
+   "nume": "Cartea a treia a Macabeilor",
+   "testament": "Vechiul Testament",
+   "capitole": 7,
+   "id_site": 51
+  },
+  {
+   "n": 53,
+   "abr": "Man",
+   "titlu": "Manase",
+   "nume": "Rugăciunea regelui Manase",
+   "testament": "Vechiul Testament",
+   "capitole": 1,
+   "id_site": 54
+  },
+  {
+   "n": 54,
+   "abr": "Mt",
+   "titlu": "Matei",
+   "nume": "Sfânta Evanghelie după Matei",
+   "testament": "Noul Testament",
+   "capitole": 28,
+   "id_site": 55
+  },
+  {
+   "n": 55,
+   "abr": "Mc",
+   "titlu": "Marcu",
+   "nume": "Sfânta Evanghelie după Marcu",
+   "testament": "Noul Testament",
+   "capitole": 16,
+   "id_site": 53
+  },
+  {
+   "n": 56,
+   "abr": "Lc",
+   "titlu": "Luca",
+   "nume": "Sfânta Evanghelie după Luca",
+   "testament": "Noul Testament",
+   "capitole": 24,
+   "id_site": 48
+  },
+  {
+   "n": 57,
+   "abr": "In",
+   "titlu": "Ioan",
+   "nume": "Sfânta Evanghelie după Ioan",
+   "testament": "Noul Testament",
+   "capitole": 21,
+   "id_site": 35
+  },
+  {
+   "n": 58,
+   "abr": "FA",
+   "titlu": "Faptele Sfinților Apostoli",
+   "nume": "",
+   "testament": "Noul Testament",
+   "capitole": 28,
+   "id_site": 26
+  },
+  {
+   "n": 59,
+   "abr": "Rm",
+   "titlu": "Romani",
+   "nume": "Ep. către Romani a Sf. Ap. Pavel",
+   "testament": "Noul Testament",
+   "capitole": 16,
+   "id_site": 70
+  },
+  {
+   "n": 60,
+   "abr": "1Co",
+   "titlu": "I Corinteni",
+   "nume": "Ep. I către Corinteni a Sf. Ap. Pavel",
+   "testament": "Noul Testament",
+   "capitole": 16,
+   "id_site": 12
+  },
+  {
+   "n": 61,
+   "abr": "2Co",
+   "titlu": "II Corinteni",
+   "nume": "Ep. II către Corinteni a Sf. Ap. Pavel",
+   "testament": "Noul Testament",
+   "capitole": 13,
+   "id_site": 13
+  },
+  {
+   "n": 62,
+   "abr": "Ga",
+   "titlu": "Galateni",
+   "nume": "Ep. către Galateni a Sf. Ap. Pavel",
+   "testament": "Noul Testament",
+   "capitole": 6,
+   "id_site": 29
+  },
+  {
+   "n": 63,
+   "abr": "Ef",
+   "titlu": "Efeseni",
+   "nume": "Ep. către Efeseni a Sf. Ap. Pavel",
+   "testament": "Noul Testament",
+   "capitole": 6,
+   "id_site": 19
+  },
+  {
+   "n": 64,
+   "abr": "Flp",
+   "titlu": "Filipeni",
+   "nume": "Ep. către Filipeni a Sf. Ap. Pavel",
+   "testament": "Noul Testament",
+   "capitole": 4,
+   "id_site": 28
+  },
+  {
+   "n": 65,
+   "abr": "Col",
+   "titlu": "Coloseni",
+   "nume": "Ep. către Coloseni a Sf. Ap. Pavel",
+   "testament": "Noul Testament",
+   "capitole": 4,
+   "id_site": 10
+  },
+  {
+   "n": 66,
+   "abr": "1Tes",
+   "titlu": "I Tesaloniceni",
+   "nume": "Ep. I către Tesaloniceni a Sf. Ap. Pavel",
+   "testament": "Noul Testament",
+   "capitole": 5,
+   "id_site": 76
+  },
+  {
+   "n": 67,
+   "abr": "2Tes",
+   "titlu": "II Tesaloniceni",
+   "nume": "Ep. II către Tesaloniceni a Sf. Ap. Pavel",
+   "testament": "Noul Testament",
+   "capitole": 3,
+   "id_site": 77
+  },
+  {
+   "n": 68,
+   "abr": "1Tim",
+   "titlu": "I Timotei",
+   "nume": "Ep. I către Timotei a Sf. Ap. Pavel",
+   "testament": "Noul Testament",
+   "capitole": 6,
+   "id_site": 78
+  },
+  {
+   "n": 69,
+   "abr": "2Tim",
+   "titlu": "II Timotei",
+   "nume": "Ep. II către Timotei a Sf. Ap. Pavel",
+   "testament": "Noul Testament",
+   "capitole": 4,
+   "id_site": 79
+  },
+  {
+   "n": 70,
+   "abr": "Tit",
+   "titlu": "Tit",
+   "nume": "Ep. către Tit a Sf. Ap. Pavel",
+   "testament": "Noul Testament",
+   "capitole": 3,
+   "id_site": 80
+  },
+  {
+   "n": 71,
+   "abr": "Flm",
+   "titlu": "Filimon",
+   "nume": "Ep. către Filimon a Sf. Ap. Pavel",
+   "testament": "Noul Testament",
+   "capitole": 1,
+   "id_site": 27
+  },
+  {
+   "n": 72,
+   "abr": "Evr",
+   "titlu": "Evrei",
+   "nume": "Ep. către Evrei a Sf. Ap. Pavel",
+   "testament": "Noul Testament",
+   "capitole": 13,
+   "id_site": 22
+  },
+  {
+   "n": 73,
+   "abr": "Iac",
+   "titlu": "Iacov",
+   "nume": "Ep. Sobornicească a Sf. Ap. Iacov",
+   "testament": "Noul Testament",
+   "capitole": 5,
+   "id_site": 30
+  },
+  {
+   "n": 74,
+   "abr": "1Ptr",
+   "titlu": "I Petru",
+   "nume": "I-a Ep. Sobornicească a Sf. Ap. Petru",
+   "testament": "Noul Testament",
+   "capitole": 5,
+   "id_site": 61
+  },
+  {
+   "n": 75,
+   "abr": "2Ptr",
+   "titlu": "II Petru",
+   "nume": "A doua Ep. Sobornicească a Sf. Ap. Petru",
+   "testament": "Noul Testament",
+   "capitole": 3,
+   "id_site": 62
+  },
+  {
+   "n": 76,
+   "abr": "1In",
+   "titlu": "I Ioan",
+   "nume": "I-a Ep. Sobornicească a Sf. Ap. Ioan",
+   "testament": "Noul Testament",
+   "capitole": 5,
+   "id_site": 36
+  },
+  {
+   "n": 77,
+   "abr": "2In",
+   "titlu": "II Ioan",
+   "nume": "A doua Ep. Sobornicească a Sf. Ap. Ioan",
+   "testament": "Noul Testament",
+   "capitole": 1,
+   "id_site": 37
+  },
+  {
+   "n": 78,
+   "abr": "3In",
+   "titlu": "III Ioan",
+   "nume": "A treia Ep. Sobornicească a Sf. Ap. Ioan",
+   "testament": "Noul Testament",
+   "capitole": 1,
+   "id_site": 38
+  },
+  {
+   "n": 79,
+   "abr": "Iuda",
+   "titlu": "Iuda",
+   "nume": "Ep. Sobornicească a Sf. Ap. Iuda",
+   "testament": "Noul Testament",
+   "capitole": 1,
+   "id_site": 44
+  },
+  {
+   "n": 80,
+   "abr": "Ap",
+   "titlu": "Apocalipsa",
+   "nume": "Apocalipsa Sf. Ioan Teologul",
+   "testament": "Noul Testament",
+   "capitole": 22,
+   "id_site": 4
+  }
+ ]
+}
